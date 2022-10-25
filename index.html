@@ -8,17 +8,35 @@
     <title>Currency Converter</title>
 </head>
 <body>
-    <form id="currency-converter" 
-    action="">
-<label for="from">From</label>
-<input type="text" name="from" id="from">
-<label for="to">To</label>
-<input type="text" name="to" id="to">
-<label for="amount">Amount</label>
-<input type="number" name="amount" id="amount">
-<button type="submit">Convert</button>
-</form>
-<p class="result"></p>
+    <div class="form">
+
+        <form id="currency-converter" 
+        action="">
+        <h1>Currency Converter</h1>
+        <div>
+            
+            <label for="from">From</label>
+            <input type="text" name="from" id="from">
+        </div>
+        <div class="to-div">
+            
+            <label for="to">To</label>
+            <input type="text" name="to" id="to">
+        </div>
+        <div class="amount-div">
+            
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount">
+        </div>
+        <div class="result-div">
+
+            <label for="result">Result</label>
+            <p id="result" class="result"></p>
+        </div>
+        <button type="submit">CONVERT</button>
+    </form>
+    
+</div>
 
     <script src="script.js"></script>
 </body>

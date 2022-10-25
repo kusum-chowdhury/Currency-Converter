@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const requestOptions = {
         method: "GET",
-        redirect: follow,
         headers, 
     
     }
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let {info, date, query: {to: convertTo}, result} = data;
         
-        document.querySelector(".result").textContent = `As per the exchange rate :${info.rate.toFixed(2)} for ${date} => converted value in ${convertTo} is ${result.toFixed(2)}`;
+        document.querySelector(".result").textContent = ` ${result.toFixed(2)} ${convertTo}`;
     } 
     catch(error) {
         console.log(error);
